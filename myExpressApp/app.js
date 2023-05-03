@@ -38,4 +38,17 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+const fetchPost = () => {
+  fetch(userGroup)
+      .then((res) => {
+          //const responseClone = res.clone();
+          return res.json()
+      })
+      .then((res) => {
+          console.log(res, "success")
+          setVisitANSList(res)
+      })
+}
+
+
 module.exports = app;
