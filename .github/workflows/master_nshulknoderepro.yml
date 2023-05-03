@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'nshulkNodeRepro'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BD39089B0E27428B9AC378305017541C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_589C0EAD4082490F81E4DAFF8483AC0A }}
           package: .
